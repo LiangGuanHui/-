@@ -5,14 +5,16 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'; // 默认主题
 // import '../static/css/theme-green/index.css';       // 浅绿色主题
 import './assets/css/icon.css';
-import './components/common/directives';
-
+import './components/js/directives';
 import axios from 'axios';
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false //设置为 false 以阻止 vue 在启动时生成生产提示
 Vue.use(ElementUI, {
     size: 'small'
 })
+// 引入mockjs
+require('./mock.js')
+// import Mock from './mock.js'
 
 Vue.prototype.$axios = axios;
 

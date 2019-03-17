@@ -16,10 +16,10 @@
 </template>
 
 <script>
-import vHead from './Header.vue'
-import vSidebar from './Sidebar.vue';
-import vTags from './Tags.vue';
-import bus from './bus';
+import vHead from './common/Header.vue'
+import vSidebar from './common/Sidebar.vue';
+import vTags from './common/Tags.vue';
+import bus from './js/bus';
 export default {
     data () {
         return {

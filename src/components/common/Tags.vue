@@ -23,7 +23,8 @@
 </template>
 
 <script>
-    import bus from './bus';
+    // import bus from './bus';
+    import bus from '../js/bus';
     export default {
         data() {
             return {

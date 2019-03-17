@@ -23,7 +23,7 @@ a {
 
 .content-box {
     position: absolute;
-    left: 250px;
+    left: 200px;
     right: 0;
     top: 70px;
     bottom: 0;
@@ -60,6 +60,54 @@ a {
     margin: 20px 0;
     text-align: right;
 }
+.pagination {
+    position: relative;
+    border: 1px solid #d7dde4;
+    border-top: 0px;
+    background-color: #fff;
+    padding: 8px 0;
+    text-align: right;
+}
+.el-input--small .el-input__inner {
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+}
+.el-pagination__pagecount .el-input--suffix .el-input__inner {
+    padding-left: 5px;
+}
+.el-pagination__pagecount .el-select,
+.el-pagination__pagecount .el-input{
+    width: 62px;
+}
+.pagination .el-input--small .el-input__inner {
+    height: 28px;
+}
+.el-pagination__pagecount .el-input--suffix .el-input__inner{
+    padding-left: 5px;
+}
+.el-pagination__pagecount .el-select, .el-pagination__pagecount .el-input {
+    width: 62px;
+}
+.el-pagination__pagecount {
+    display: inline-block;
+    font-size: 13px;
+    min-width: 35.5px;
+    height: 28px;
+    line-height: 28px;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-weight: 400;
+    color: #606266;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+
+
+
 
 .plugins-tips {
     padding: 20px 10px;

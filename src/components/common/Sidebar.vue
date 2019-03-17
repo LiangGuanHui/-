@@ -32,16 +32,26 @@
 </template>
 
 <script>
-    import bus from '../common/bus';
+    import bus from '../js/bus';
     export default {
         data() {
             return {
                 collapse: false,
                 items: [
                     {
-                        icon: 'el-icon-lx-home',
-                        index: 'dashboard',
+                        // icon: 'el-icon-lx-home',
+                        index: 'home',
                         title: '系统首页'
+                    },
+                    {
+                        // icon: 'el-icon-lx-home',
+                        index: 'table',
+                        title: '表格页面'
+                    },
+                    {
+                        // icon: 'el-icon-lx-home',
+                        index: 'hello',
+                        title: '测试mock数据'
                     },
                 ]
             }
@@ -73,7 +83,7 @@
         width: 0;
     }
     .sidebar-el-menu:not(.el-menu--collapse){
-        width: 250px;
+        width: 220px;
     }
     .sidebar > ul {
         height:100%;
