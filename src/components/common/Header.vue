@@ -46,7 +46,12 @@
 <script>
     // import bus from '../common/bus';
     import bus from '../js/bus';
+    import icon from '../icon/index'
     export default {
+        name:'Header',
+        components: {
+            icon
+        },
         data() {
             return {
                 collapse: false,

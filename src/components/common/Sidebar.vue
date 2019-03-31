@@ -39,19 +39,39 @@
                 collapse: false,
                 items: [
                     {
-                        // icon: 'el-icon-lx-home',
+                        icon: 'el-icon-lx-home',
                         index: 'home',
                         title: '系统首页'
                     },
                     {
-                        // icon: 'el-icon-lx-home',
+                        icon: 'el-icon-lx-home',
                         index: 'table',
                         title: '表格页面'
                     },
                     {
-                        // icon: 'el-icon-lx-home',
+                        icon: 'el-icon-lx-home',
                         index: 'hello',
                         title: '测试mock数据'
+                    },
+                    {
+                        icon: 'el-icon-lx-home',
+                        index: 'period',
+                        title: '声明周期'
+                    },
+                    {
+                        icon: 'el-icon-lx-home',
+                        index: 'vuex',
+                        title: 'Vuex的使用'
+                    },
+                    {
+                        icon: 'el-icon-lx-home',
+                        index: 'father',
+                        title: '父组件'
+                    },
+                    {
+                        icon: 'el-icon-lx-home',
+                        index: 'nextTick',
+                        title: 'nextTick是使用'
                     },
                 ]
             }

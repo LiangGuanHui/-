@@ -7,17 +7,22 @@
       ></news-cell>
     </div>
   </div>
+  
 </template>
- 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
 <script>
-import api from './../axios/api.js'
+// import api from './../axios/api.js'
+import axios from 'axios'
 import NewsCell from '../components/common/NewsCell.vue'
+
  
 export default {
-  name: 'index',
+  name: 'Hello',
   data () {
     return {
       newsListShow: [],
+      show:true,
     }
   },
   components: {
@@ -27,14 +32,20 @@ export default {
     this.setNewsApi();
   },
   methods:{
-    setNewsApi: function() {
-      api.JH_news('/news/index', 'type=top&key=123456')
-      .then(res => {
-        console.log(res);
-        this.newsListShow = res.articles;
-      });
+    setNewsApi () {
+      // api.JH_news('/news/index', 'type=top&key=123456')
+      // .then(res => {
+      //   console.log(res);
+      //   this.newsListShow = res.articles;
+      // });
+
+      axios.get('/api/users','name=123&id=2').then(res=>{
+          console.log(res)
+          this.newsListShow= res.data.user;
+      })
     },
-  }
+  },
+  
 }
 </script>
 
@@ -73,4 +84,5 @@ export default {
   width:100%;
   height: 10rem;
 }
+
 </style>

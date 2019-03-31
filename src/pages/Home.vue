@@ -17,8 +17,8 @@
                     <div slot="header" class="clearfix">
                         <span>语言详情</span>
                     </div>
-                    <span @click="VueAxios">Vue</span>
-                    <el-progress :percentage="71.3" color="#42b983"></el-progress>
+                    <span @click="VueAxios" title="Vue">Vue</span>
+                    <el-progress title="Vue" :percentage="71.3" color="#42b983"></el-progress>
                     JavaScript
                     <el-progress :percentage="24.1" color="#f1e05a"></el-progress>
                     CSS
@@ -68,7 +68,7 @@
                         <span>待办事项</span>
                         <el-button style="float: right; padding: 3px 0" type="text">添加</el-button>
                     </div>
-                    <el-table :data="todoList" :show-header="false" height="304" style="width: 100%;font-size:14px;">
+                    <el-table class="ttbb" :data="todoList" :show-header="false" height="304" style="width: 100%;font-size:14px;">
                         <el-table-column width="40">
                             <template slot-scope="scope">
                                 <el-checkbox v-model="scope.row.status"></el-checkbox>
@@ -351,4 +351,16 @@
         height: 300px;
     }
 
+    /* .ttbb{
+        background: #ccc;
+    }
+    .el-table th, .el-table tr{
+        background: red;
+    } */
+    .el-table th, .el-table tr{
+    background: red;
+}
+.el-table tr:hover{
+    background: #ccc;
+}
 </style>

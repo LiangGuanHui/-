@@ -68,7 +68,6 @@
 import axios from 'axios';
 import MainTable from '../components/common/MainTable.vue'
 import api from './../axios/api.js'
-// import NewsCell from '../components/common/NewsCell.vue'
 import bus from '../components/js/bus';
 
 export default {
@@ -150,16 +149,23 @@ export default {
                     list: [
                         {
                             label: '查看',
-                            icon: '/static/img/Editing-equipment.png',
+                            icon: '/assets/img/show.png',
                             method: (index, row) => {
-                                this.handleBasic(index, row)
+                                // this.handleBasic(index, row)
+                            }
+                        },
+                        {
+                            label: '编辑',
+                            icon: '/assets/img/revise.png',
+                            method: (index, row) => {
+                                // this.handleBasic(index, row)
                             }
                         },
                         {
                             label: '删除',
                             icon: '/static/img/trash.png',
                             method: (index, row) => {
-                                this.handleDelete(index, row)
+                                // this.handleDelete(index, row)
                             }
                         }
                     ]
@@ -188,9 +194,9 @@ export default {
         setNewsApi () {
             axios.get('/api/users','name=123&id=2').then(res=>{
                 console.log(res)
-                this.users= res.data.user;
+                // this.users= res.data.data;  // 无分页表格
 
-                this.$refs.mainTable.setData= res.data.user;
+                this.$refs.mainTable.setData(res.data.data)  //带分页表格
             })
         },
         onSubmit(){

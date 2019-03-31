@@ -8,16 +8,27 @@
           </router-link>
           <el-button class="error-btn" type="primary" size="large" @click="goBack">返回上一页</el-button>
       </div>
+      <input v-model.trim="mes" value="不会出现，因为v-model会屏蔽这个vue，值读取data()里面的"/>
   </div>
 </template>
 
 <script>
 export default {
-  methods: {
-      goBack(){
-          this.$router.go(-1);
-      }
-  }
+    data () {
+        return {
+            mes:'     123         '
+        }
+    },
+    methods: {
+        goBack(){
+            this.$router.go(-1);
+        }
+    },
+    watch: {
+        mes(){
+            return console.log(this.mes)
+        }
+    }
 }
 </script>
 

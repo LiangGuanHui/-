@@ -29,7 +29,28 @@ export default new Router({
           path: '/hello',
           component: resolve => require(['../pages/Hello.vue'], resolve),
           meta: { title: '测试数据' }
+        },
+        {
+          path: '/period',
+          component: resolve => require(['../pages/Period.vue'], resolve),
+          meta: { title: '声明周期' }
+        },
+        {
+          path: '/vuex',
+          component: resolve => require(['../pages/Vuex.vue'], resolve),
+          meta: { title: 'Vuex的使用' }
+        },
+        {
+          path: '/father',
+          component: resolve => require(['../pages/Father.vue'], resolve),
+          meta: { title: '父组件' }
+        },
+        {
+          path: '/nextTick',
+          component: resolve => require(['../pages/NextTick.vue'], resolve),
+          meta: { title: 'nextTick的使用' }
         }
+        
       ]
     },
     {

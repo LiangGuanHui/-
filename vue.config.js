@@ -63,7 +63,7 @@
 //     // 是否为 Babel 或 TypeScript 使用 thread-loader
 //     parallel: require('os').cpus().length > 1,
 //     // 向 PWA 插件传递选项
-//     pwa: {},
+//     pwa: {}
 //     // 可以用来传递任何第三方插件选项
 //     pluginOptions: {}
 //   }
